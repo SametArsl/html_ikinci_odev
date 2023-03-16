@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--h1 etiketiyle adimizi yaziyoruz-->
+<h1>Samet Arslan</h1>
+<!--h2 etiketiyle hakkimda basligini olusturuyoruz-->
+<h2>Hakkımda</h2>
+<!--p etiketi içerisine içerigimizi yaziyoruz. Paragraf icerisinde gecen "Patika" ve "Front-End Egitimi" ifadelerini <strong> ile kalinlastirip <a> etiketiyle link ekliyoruz-->
+<p>Merhaba, ben Samet Arslan. İstanbul'da yaşıyorum. Peyzaj Mimarlığı lisans programını bitirdim ve özel sektörde birkaç sene çalıştıktan sonra sektör içerisinde birçok problem yaşadıktan sonra meslekten uzaklaştım ve mesleği bıraktım.</p>
+
+<p>Lise yıllarımda Bilgisayar Mühendisliği okumak istemiştim ancak sınavda o kadar başarılı olamadım. Şimdilerde ise kodlamaya merak sardım ve YouTube üzerinden "<a href="https://patika.dev" target="_blank"><strong>Patika</strong></a>" ile tanıştım. Birçok eğitimi inceledikten sonra <a href="https://app.patika.dev/paths/baslangic-seviye-frontend-web-development-patikasi" target="_blank"> <strong>Front-End Patikası</strong></a>'nın bana uygun olduğunu düşündüm ve eğitime başladım.</p>
+<!--h2 etiketiyle ilgi alanlarim basligini olusturuyoruz-->
+<h2>İlgi Alanlarım</h2>
+<!--div>ol>li*3 ile emmet kullanarak ordered list olusturuyoruz. Sonrasinda <li> içerisine ul>li*3 ile emmet kullanarak unordered list olusturuyoruz. Film, dizi ve kitap icin ordered listi kullanip 3'er adet icerik icin unordered list kullaniyoruz.-->
+<div>
+<ol type="I">
+    <li><a href="#sevdigimfilmler">Film</a>
+        <!--Film yazisini tikladigimizda "Sevdigim Filmler" basligina gidilebilmesi icin baslikta id olusturuyoruz ve a etiketi icerisinde id belirtiyoruz. Diger basliklar icin de yapiyoruz.-->
+        <ul style="list-style-type: circle;">
+            <li>
+                <a href="https://www.imdb.com/title/tt1392190/" target="_blank">Mad Max: Fury Road
+                </a>
+                <!--Yaziya tikladigimizda imdb linki acilacaktir ve bu linkin farkli bir sekmede acilmasi icin target komutu giriyoruz.-->
+            </li>
+            <li>
+                <a href="https://www.imdb.com/title/tt0816692/?ref_=nv_sr_srsg_0" target="_blank">Interstellar
+                </a>
+            </li>
+            <li>
+                <a href="https://www.imdb.com/title/tt0088763/?ref_=nv_sr_srsg_0" target="_blank">Back to the Future
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li><a href="#sevdigimdiziler">Dizi</a>
+        <ul style="list-style-type: circle;">
+            <li>
+                <a href="https://www.imdb.com/title/tt0903747/?ref_=nv_sr_srsg_3" target="_blank">Breaking Bad
+                </a>
+            </li>
+            <li>
+                <a href="https://www.imdb.com/title/tt3581920/?ref_=nv_sr_srsg_2" target="_blank">The Last of Us
+                </a>
+            </li>
+            <li>
+                <a href="https://www.imdb.com/title/tt0386676/?ref_=nv_sr_srsg_0" target="_blank">The Office
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li><a href="#sevdigimkitaplar">Kitap</a>
+        <ul style="list-style-type: circle;">
+            <li>
+                <a href="https://www.goodreads.com/book/show/33.The_Lord_of_the_Rings?from_search=true&from_srp=true&qid=AXUpETXSH3&rank=3" target="_blank">Yüzüklerin Efendisi
+                </a>
+            </li>
+            <li>
+                <a href="https://www.goodreads.com/book/show/44767458-dune?ref=nav_sb_noss_l_4" target="_blank">Dune
+                </a>
+            </li>
+            <li>
+                <a href="https://www.goodreads.com/book/show/34376766-blood-sweat-and-pixels?ref=nav_sb_ss_1_9" target="_blank">Kan, Ter ve Pikseller
+                </a>
+            </li>
+        </ul>
+    </li>
+</ol>
+</div>
+
+<h2 id="sevdigimfilmler">Sevdiğim Filmler</h2>
+<!--h2 ile basligimizi olusturuyoruz-->
+<br>
+<!--br komutu ile sayfamizda satir boslugu birakiyoruz-->
+<h3>Mad Max: Fury Road</h3>
+    <a href="https://www.imdb.com/title/tt1392190/" target="_blank">
+        <img src="https://www.wallpaperup.com/uploads/wallpapers/2015/04/19/666152/711f8f8d72ee4f54b4d24fa064a64247-500.jpg" height="400" alt="Mad Max: Fury Road">
+    </a>
+    <p><strong>Mad Max: Fury Road</strong>, 2015 Avustralya yapımı kıyamet sonrası türündeki aksiyon filmidir. <em>George Miller</em>'in <br>yazıp yönettiği film, Mad Max serisinin <em>dördüncü</em> filmi olma özelliğini taşımaktadır.</p>
+<!--Her film ve dizi icin 1920x1080 boyutlarinda gorseller buluyoruz ve sonrasinda her birinin ayni boyutta olmasi icin height degerini degistiriyoruz. <img> etiketiyle gorselimizi web sayfamiza yerlestiriyoruz ve <a> etiketi icerisinde kullandigimiz href etiketiyle kullanicinin gorsele tikladigimizda filmin imdb linkine gitmesini sagliyoruz.-->
+<br>
+
+<h3>Interstellar</h3>
+    <a href="https://www.imdb.com/title/tt0816692/?ref_=nv_sr_srsg_0" target="_blank">
+        <img src="https://images2.alphacoders.com/605/605940.jpg" height="400" alt="Interstellar">
+    </a>
+    <p>
+        <strong>Interstellar</strong>, <em>Christopher Nolan</em> tarafından yönetilen epik bilimkurgu türündeki, 2014 yapımı ABD filmi. <br>Başrollerinde <em>Matthew McConaughey</em>, <em>Anne Hathaway</em>, <em>Jessica Chastain</em> ve <em>Michael Caine</em> yer almaktadır.
+    </p>
+
+<br>
+
+<h3>Back to the Future</h3>
+    <a href="https://www.imdb.com/title/tt0088763/?ref_=nv_sr_srsg_0" target="_blank">
+        <img src="https://p4.wallpaperbetter.com/wallpaper/724/410/485/back-to-the-future-neon-wallpaper-preview.jpg" height="400" alt="Back to the Future">
+    </a>
+    <p>
+        <strong>Back to the Future</strong>, <em>Robert Zemeckis</em>'in yönetmenlik, <em>Bob Gale</em>'ın yardımcı senaristlik, <em>Steven Spielberg</em>'in <br>yürütücü yapımcılık yaptığı, 1985 yapımı bilimkurgu, macera ve komedi türündeki filmdir.
+    </p>
+
+<br>
+
+<h2 id="sevdigimdiziler">Sevdiğim Diziler</h2>
+
+<br>
+
+<h3>Breaking Bad</h3>
+    <a href="https://www.imdb.com/title/tt0903747/?ref_=nv_sr_srsg_3" target="_blank">
+        <img src="https://p4.wallpaperbetter.com/wallpaper/12/292/881/breaking-bad-tv-wallpaper-preview.jpg" alt="Breaking Bad" height="400">
+    </a>
+    <p>
+        <strong>Breaking Bad</strong>, <em>Vince Gilligan</em> tarafından tasarlanmış Amerikan suç draması televizyon dizisidir.
+    </p>
+
+<br>
+
+<h3>The Last of Us</h3>
+    <a href="https://www.imdb.com/title/tt3581920/?ref_=nv_sr_srsg_2" target="_blank">
+        <img src="https://i0.wp.com/insider-gaming.com/wp-content/uploads/2023/01/where-to-watch-the-last-of-us-tv-show-in-the-uk.jpg?resize=770%2C433&ssl=1" alt="The Last of Us" height="400">
+    </a>
+    <p>
+        <strong>The Last of Us</strong>, 2023 yılı başında HBO Max'ta yayımlanmaya başlayan bir Amerikan televizyon dizisidir.<br><strong>Naughty Dog</strong> tarafından geliştirilen ve aynı adı taşıyan, 2013 yapımı video oyununa dayanan dizide, medeniyeti <br>büyük ölçüde yok eden bir felaket sonrasında ABD'de uzun bir yolculuğa çıkan genç <em>Ellie (Bella Ramsey)</em> ve ona <br>eşlik eden <em>Joel (Pedro Pascal)</em> karakterlerinin öyküsü anlatılmaktadır.
+    </p>
+
+<br>
+
+<h3>The Office</h3>
+    <a href="https://www.imdb.com/title/tt0386676/?ref_=nv_sr_srsg_0" target="_blank">
+        <img src="https://images6.alphacoders.com/111/1114930.jpg" alt="The Office" height="400">
+    </a>
+    <p>
+        <strong>The Office</strong>, Emmy ve Altın Küre ödüllü komedi dizisi. Dizinin yapımcısı ve fikir babalarından <em>Ricky Gervais</em>'in <br> baş rolünü de oynadığı İngiliz yapımı <strong>The Office</strong> dizisinden uyarlanmış ve Amerikan NBC kanalında yayınlanmıştır.
+    </p>
+
+<br>
+
+<h2 id="sevdigimkitaplar">Sevdiğim Kitaplar</h2>
+
+<br>
+
+<h3>The Lord of The Rings</h3>
+    <a href="https://www.goodreads.com/book/show/33.The_Lord_of_the_Rings?from_search=true&from_srp=true&qid=AXUpETXSH3&rank=3" target="_blank">
+        <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1566425108i/33.jpg" alt="The Lord of The Rings" height="400">
+    </a>
+    <p>
+        <strong>Yüzüklerin Efendisi</strong> (İng. The Lord of the Rings), İngiliz filolojist ve Oxford Üniversitesi profesörü <em>J. R. R. Tolkien'in</em> <br>yazdığı epik fantezi türündeki romandır. Hikâye, Tolkien'in çocuklar için yazdığı 1937 tarihli <strong>Hobbit</strong>'in devamı olarak <br>başlamıştı ancak sonunda ondan çok daha büyük bir eser haline geldi. 
+    </p>
+
+<br>
+
+<h3>Dune</h3>
+    <a href="https://www.goodreads.com/book/show/44767458-dune?ref=nav_sb_noss_l_4" target="_blank">
+        <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1592650253i/50395705.jpg" alt="Dune" height="400">
+    </a>
+    <p>
+        <strong>Dune</strong> (diğer bir adıyla Dune: Çöl Gezegeni), Amerikalı yazar <em>Frank Herbert</em> tarafından Analog dergisinde iki ayrı bölüm <br> olarak yayımlanan 1965 çıkışlı bilimkurgu romanıdır.
+    </p>
+
+<br>
+
+<h3>Kan, Ter ve Pikseller</h3>
+    <a href="https://www.goodreads.com/book/show/34376766-blood-sweat-and-pixels?ref=nav_sb_ss_1_9" target="_blank">
+        <img src="https://m.media-amazon.com/images/I/51JPZsBC1jL._SY344_BO1,204,203,200_.jpg" alt="Kan, Ter ve Pikseller" height="400">
+    </a>
+    <p>
+        <strong>Kan, Ter ve Pikseller</strong>’de, <em>Jason Schreier</em>, oyun geliştiriciliğinin perde arkasını gösteriyor ve okurlarını, yaratıcıların <br> bazen uzun saatler çalıştırılan altı yüz kişilik ekiplerden, bazen de yalnız bir bilgisayar dâhisinden <br> oluştuğu sularda heyecanlı bir yolculuğa çıkarıyor.
+    </p>
+</html>
+</body>
